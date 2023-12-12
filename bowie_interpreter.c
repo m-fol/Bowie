@@ -9,7 +9,7 @@ int main() {
     char instruction;
 
     while ((instruction = getchar()) != EOF) {
-        printf("Executing instruction: %c\n", instruction);
+        //printf("Executing instruction: %c\n", instruction);
 
         switch (instruction) {
             case 'Z':
