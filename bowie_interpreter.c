@@ -5,12 +5,9 @@
 int main() {
     char tape[MEMORY_SIZE] = {0};
     int ptr = 0;
-
     char instruction;
 
     while ((instruction = getchar()) != EOF) {
-        printf("Executing instruction: %c\n", instruction);
-
         switch (instruction) {
             case 'Z':
                 tape[ptr] = 0; // Ziggy Stardust
@@ -32,7 +29,6 @@ int main() {
                     int nesting = 1;
                     while (nesting > 0) {
                         instruction = getchar();
-                        printf("Inside loop C: %c\n", instruction);
                         if (instruction == 'C') {
                             nesting++;
                         } else if (instruction == 'H') {
@@ -48,7 +44,6 @@ int main() {
                     int nesting = 1;
                     while (nesting > 0) {
                         instruction = getchar();
-                        printf("Inside loop R: %c\n", instruction);
                         if (instruction == 'R') {
                             nesting++;
                         } else if (instruction == 'E') {
