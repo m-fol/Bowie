@@ -5,9 +5,11 @@
 int main() {
     char tape[MEMORY_SIZE] = {0};
     int ptr = 0;
-    char instruction;
+    int instruction;
 
     while ((instruction = getchar()) != EOF) {
+        char nextChar; // Variable to store the next character
+
         switch (instruction) {
             case 'Z':
                 tape[ptr] = 0; // Ziggy Stardust
@@ -16,8 +18,8 @@ int main() {
                 ++tape[ptr]; // Major Tom
                 break;
             case 'S':
-                instruction = getchar();
-                if (instruction == 't' || instruction == 'T') {
+                nextChar = getchar();
+                if (nextChar == 't' || nextChar == 'T') {
                     putchar(tape[ptr]); // Starman
                 } else {
                     --tape[ptr]; // Space Oddity
@@ -30,12 +32,12 @@ int main() {
                 if (tape[ptr] == 0) {
                     int nesting = 1;
                     while (nesting > 0) {
-                        instruction = getchar();
-                        if (instruction == 'C' || instruction == 'c') {
+                        nextChar = getchar();
+                        if (nextChar == 'C' || nextChar == 'c') {
                             nesting++;
-                        } else if (instruction == 'h' || instruction == 'H') {
+                        } else if (nextChar == 'h' || nextChar == 'H') {
                             nesting--;
-                        } else if (instruction == EOF) {
+                        } else if (nextChar == EOF) {
                             break; // Break out of the loop if EOF is encountered
                         }
                     }
@@ -45,12 +47,12 @@ int main() {
                 if (tape[ptr] != 0) {
                     int nesting = 1;
                     while (nesting > 0) {
-                        instruction = getchar();
-                        if (instruction == 'R' || instruction == 'r') {
+                        nextChar = getchar();
+                        if (nextChar == 'R' || nextChar == 'r') {
                             nesting++;
-                        } else if (instruction == 'e' || instruction == 'E') {
+                        } else if (nextChar == 'e' || nextChar == 'E') {
                             nesting--;
-                        } else if (instruction == EOF) {
+                        } else if (nextChar == EOF) {
                             break; // Break out of the loop if EOF is encountered
                         }
                     }
