@@ -9,6 +9,7 @@ int main() {
     char instruction;
 
     while ((instruction = getchar()) != EOF) {
+        printf("Executing instruction: %c\n", instruction);  // Add this line
         switch (instruction) {
             case 'Z':
                 tape[ptr] = 0; // Ziggy Stardust
