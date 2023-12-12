@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build bowie_interpreter",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "bowie_interpreter.c",
+                "-o",
+                "bowie_interpreter"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
