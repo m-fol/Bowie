@@ -31,14 +31,17 @@ int main() {
                     int nesting = 1;
                     while (nesting > 0) {
                         instruction = getchar();
-                        if (instruction == 'C') {
-                            nesting++;
-                        } else if (instruction == 'H') {
-                            nesting--;
-                        }
+                            if (instruction == 'C') {
+                                 nesting++;
+                            } else if (instruction == 'H') {
+                                nesting--;
+                            } else if (instruction == EOF) {
+                        break; // Break out of the loop if EOF is encountered
+                            }
                     }
                 }
-                break;
+            break;
+
             case 'R':
                 if (tape[ptr] != 0) {
                     int nesting = 1;
@@ -48,12 +51,15 @@ int main() {
                             nesting++;
                         } else if (instruction == 'E') {
                             nesting--;
+                        } else if (instruction == EOF) {
+                             break; // Break out of the loop if EOF is encountered
                         }
                     }
                 }
-                break;
-        }
-    }
+            break;
 
+                }
+            break;
+        }
     return 0;
 }
