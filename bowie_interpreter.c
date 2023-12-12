@@ -32,7 +32,7 @@ int main() {
                     int nesting = 1;
                     while (nesting > 0) {
                         instruction = getchar();
-                        printf("Inside loop C: %c\n", instruction);
+                        //printf("Inside loop C: %c\n", instruction);
                         if (instruction == 'C') {
                             nesting++;
                         } else if (instruction == 'H') {
@@ -48,7 +48,7 @@ int main() {
                     int nesting = 1;
                     while (nesting > 0) {
                         instruction = getchar();
-                        printf("Inside loop R: %c\n", instruction);
+                        //printf("Inside loop R: %c\n", instruction);
                         if (instruction == 'R') {
                             nesting++;
                         } else if (instruction == 'E') {
