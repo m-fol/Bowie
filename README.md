@@ -11,7 +11,7 @@
     > Ch-ch-changes: Conditionally execute the next command based on the current value of Ziggy Stardust. If Ziggy Stardust is zero, skip the next command; otherwise, proceed.
 - Loops:
   > Rebel Rebel: Start a loop. Continue executing the commands inside the loop until Ziggy Stardust becomes zero.
-  > Heroes: End the loop.
+  > <br> Heroes: End the loop.
 - Comments: Any text following the # symbol is treated as a comment and ignored by the interpreter.
 
 Sample "Hello, Bowie!" Program:
