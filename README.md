@@ -2,7 +2,7 @@
 
 ### Commands:
 
-- Ziggy Stardust: Initialize a variable (register) named Ziggy Stardust.
+- Ziggy: Initialize a variable (register) named Ziggy.
 - Major Tom: Increment the value of Ziggy Stardust.
 - Space Oddity: Decrement the value of Ziggy Stardust.
 - Starman: Output the ASCII character represented by the current value of Ziggy Stardust.
