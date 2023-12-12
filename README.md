@@ -1,6 +1,6 @@
 # Bowie Esolang
 
-# Commands:
+### Commands:
 
 - Ziggy Stardust: Initialize a variable (register) named Ziggy Stardust.
 - Major Tom: Increment the value of Ziggy Stardust.
