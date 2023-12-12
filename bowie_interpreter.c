@@ -7,15 +7,8 @@ int main() {
     int ptr = 0;
 
     char instruction;
-    printf("Executing instruction: %c\n", instruction);
 
-    while (1) {
-        instruction = getchar();
-
-        if (instruction == EOF || instruction == '\n') {
-            break; // End of program
-        }
-
+    while ((instruction = getchar()) != EOF) {
         switch (instruction) {
             case 'Z':
                 tape[ptr] = 0; // Ziggy Stardust
