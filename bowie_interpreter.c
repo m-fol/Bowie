@@ -8,6 +8,8 @@ int main() {
     int instruction;
 
     while ((instruction = getchar()) != EOF) {
+        if (isspace(instruction)) {
+            continue;
         char nextChar; // Variable to store the next character
 
         printf("Processing: %c\n", instruction);
