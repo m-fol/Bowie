@@ -50,7 +50,7 @@ int main() {
                         instruction = getchar();
                         if (instruction == 'R') {
                             nesting++;
-                        } else if (instruction == 'E') {
+                        } else if (instruction == 'e') {
                             nesting--;
                         } else if (instruction == EOF) {
                             break; // Break out of the loop if EOF is encountered
