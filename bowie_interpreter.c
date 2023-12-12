@@ -17,14 +17,12 @@ int main() {
                 break;
             case 'S':
                 instruction = getchar();
-                if(instruction == 't'){
+                if (instruction == 't' || instruction == 'T') {
                     putchar(tape[ptr]); // Starman
-                    break;
-                }
-                else{
+                } else {
                     --tape[ptr]; // Space Oddity
-                    break;
                 }
+                break;
             case 'L':
                 tape[ptr] = getchar(); // Life on Mars?
                 break;
@@ -33,9 +31,9 @@ int main() {
                     int nesting = 1;
                     while (nesting > 0) {
                         instruction = getchar();
-                        if (instruction == 'C') {
+                        if (instruction == 'C' || instruction == 'c') {
                             nesting++;
-                        } else if (instruction == 'h') {
+                        } else if (instruction == 'h' || instruction == 'H') {
                             nesting--;
                         } else if (instruction == EOF) {
                             break; // Break out of the loop if EOF is encountered
@@ -48,9 +46,9 @@ int main() {
                     int nesting = 1;
                     while (nesting > 0) {
                         instruction = getchar();
-                        if (instruction == 'R') {
+                        if (instruction == 'R' || instruction == 'r') {
                             nesting++;
-                        } else if (instruction == 'e') {
+                        } else if (instruction == 'e' || instruction == 'E') {
                             nesting--;
                         } else if (instruction == EOF) {
                             break; // Break out of the loop if EOF is encountered
