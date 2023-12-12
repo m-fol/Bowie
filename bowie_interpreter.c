@@ -35,7 +35,7 @@ int main() {
                         instruction = getchar();
                         if (instruction == 'C') {
                             nesting++;
-                        } else if (instruction == 'H') {
+                        } else if (instruction == 'h') {
                             nesting--;
                         } else if (instruction == EOF) {
                             break; // Break out of the loop if EOF is encountered
