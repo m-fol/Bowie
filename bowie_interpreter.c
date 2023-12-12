@@ -9,6 +9,8 @@ int main() {
     char instruction;
 
     while ((instruction = getchar()) != EOF) {
+        printf("Executing instruction: %c\n", instruction);
+
         switch (instruction) {
             case 'Z':
                 tape[ptr] = 0; // Ziggy Stardust
@@ -30,10 +32,13 @@ int main() {
                     int nesting = 1;
                     while (nesting > 0) {
                         instruction = getchar();
+                        printf("Inside loop C: %c\n", instruction);
                         if (instruction == 'C') {
                             nesting++;
                         } else if (instruction == 'H') {
                             nesting--;
+                        } else if (instruction == EOF) {
+                            break; // Break out of the loop if EOF is encountered
                         }
                     }
                 }
@@ -43,10 +48,13 @@ int main() {
                     int nesting = 1;
                     while (nesting > 0) {
                         instruction = getchar();
+                        printf("Inside loop R: %c\n", instruction);
                         if (instruction == 'R') {
                             nesting++;
                         } else if (instruction == 'E') {
                             nesting--;
+                        } else if (instruction == EOF) {
+                            break; // Break out of the loop if EOF is encountered
                         }
                     }
                 }
