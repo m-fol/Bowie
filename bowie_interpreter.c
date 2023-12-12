@@ -10,6 +10,8 @@ int main() {
     while ((instruction = getchar()) != EOF) {
         char nextChar; // Variable to store the next character
 
+        printf("Processing: %c\n", instruction);
+
         switch (instruction) {
             case 'Z':
                 tape[ptr] = 0; // Ziggy Stardust
@@ -33,6 +35,7 @@ int main() {
                     int nesting = 1;
                     while (nesting > 0) {
                         nextChar = getchar();
+                        printf("Inside loop C: %c\n", nextChar);
                         if (nextChar == 'C' || nextChar == 'c') {
                             nesting++;
                         } else if (nextChar == 'h' || nextChar == 'H') {
@@ -48,6 +51,7 @@ int main() {
                     int nesting = 1;
                     while (nesting > 0) {
                         nextChar = getchar();
+                        printf("Inside loop R: %c\n", nextChar);
                         if (nextChar == 'R' || nextChar == 'r') {
                             nesting++;
                         } else if (nextChar == 'e' || nextChar == 'E') {
