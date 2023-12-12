@@ -16,11 +16,15 @@ int main() {
                 ++tape[ptr]; // Major Tom
                 break;
             case 'S':
-                --tape[ptr]; // Space Oddity
-                break;
-            case 'H':
-                putchar(tape[ptr]); // Starman
-                break;
+                instruction = getchar();
+                if(instruction == 't'){
+                    putchar(tape[ptr]); // Starman
+                    break;
+                }
+                else{
+                    --tape[ptr]; // Space Oddity
+                    break;
+                }
             case 'L':
                 tape[ptr] = getchar(); // Life on Mars?
                 break;
