@@ -1,4 +1,4 @@
-# Bowie Esolang
+# ⭐ Bowie ⚡ Esolang 
 
 ## Overview
 
