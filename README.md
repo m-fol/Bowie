@@ -41,7 +41,7 @@ This program initializes Ziggy to 5 and then enters a loop, printing the ASCII c
 To run Bowie programs, you'll need the Bowie interpreter. Follow these steps:
 
 1. **Installation:**
-   - Clone this repository: `git clone https://github.com/m-fol/Bowie.git`
+   - Clone this repository: `git clone https://github.com/m-fol/Bowie`
    - Navigate to the Bowie directory: `cd Bowie`
    - Run the setup script: `./setup.sh`
 
