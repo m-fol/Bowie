@@ -43,11 +43,11 @@ To run Bowie programs, you'll need the Bowie interpreter. Follow these steps:
 1. **Installation:**
    - Clone this repository: `git clone https://github.com/m-fol/Bowie`
    - Navigate to the Bowie directory: `cd Bowie`
-   - Run the setup script: `./setup.sh`
+   - Run the setup script: `gcc bowie_interpreter.c -o bowie_interpreter`
 
 2. **Run Your First Program:**
    - Create a Bowie program in a file with a `.bowie` extension.
-   - Run the program using the Bowie interpreter: `./bowie_interpreter.py your_program.bowie`
+   - Run the program using the Bowie interpreter: `./bowie_interpreter.c < your_program.bowie`
 
 3. **Explore Examples:**
    - Check out the `examples` directory for additional Bowie programs.
