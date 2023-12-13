@@ -14,28 +14,35 @@ int main() {
             continue;
         }
 
-        //printf("Processing: %c\n", instruction);
+        // printf("Processing: %c\n", instruction);
 
         switch (instruction) {
             case 'Z':
-                tape[ptr] = 0; // Ziggy Stardust
+                // Ziggy: Initialize a variable (register) named Ziggy.
+                tape[ptr] = 0;
                 break;
             case 'M':
-                ++tape[ptr]; // Major Tom
+                // Major Tom: Increment the value of Ziggy.
+                ++tape[ptr];
                 break;
             case 'S':
                 nextChar = getchar();
                 if (nextChar == 't' || nextChar == 'T') {
-                    putchar(tape[ptr]); // Starman
+                    // Starman: Output the ASCII character represented by the current value of Ziggy.
+                    putchar(tape[ptr]);
                 } else {
-                    --tape[ptr]; // Space Oddity
+                    // Space Oddity: Decrement the value of Ziggy.
+                    --tape[ptr];
                 }
                 break;
             case 'L':
-                tape[ptr] = getchar(); // Life on Mars?
+                // Life on Mars?: Input a character and store its ASCII value in Ziggy.
+                tape[ptr] = getchar();
                 break;
             case 'C':
                 if (tape[ptr] == 0) {
+                    // Ch-ch-changes: Conditionally execute the next command based on the current value of Ziggy.
+                    // If Ziggy is zero, skip the next command; otherwise, proceed.
                     int nesting = 1;
                     while (nesting > 0) {
                         nextChar = getchar();
@@ -53,6 +60,7 @@ int main() {
                 break;
             case 'R':
                 if (tape[ptr] != 0) {
+                    // Rebl: Start a loop. Continue executing the commands inside the loop until Ziggy becomes zero.
                     int nesting = 1;
                     while (nesting > 0) {
                         nextChar = getchar();
