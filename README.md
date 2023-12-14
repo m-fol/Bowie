@@ -31,7 +31,6 @@ Major Tom
 Rebl
     Starman
     Space Oddity
-Heroes
 ```
 
 This program initializes Ziggy to 5 and then enters a loop, printing the ASCII character corresponding to Ziggy and decrementing Ziggy until it reaches zero. Embrace the unconventional nature of Bowie and let your creativity flow in this unique esolang.
